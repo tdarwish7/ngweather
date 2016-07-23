@@ -13,13 +13,16 @@
     controller: 'HomeController'
   })
   .when('/hourly', {
-    template: 'hourly'
+    templateUrl: 'html/views/hourly.html',
+    controller: 'HourlyController'
   })
   .when('/minutely', {
-    template: 'minutely'
+    templateUrl: 'html/views/minutely.html',
+    controller: 'MinutelyController'
   })
   .when('/daily', {
-    template: 'daily'
+    templateUrl: 'html/views/daily.html',
+    controller: 'DailyController'
   })
   .otherwise({
     redirectTo: '/'
