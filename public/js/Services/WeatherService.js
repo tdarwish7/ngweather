@@ -34,7 +34,7 @@
 
       function getMinutelyData(lat, lon){
         var url = baseUrl + 'forecast/minutely/' + lat + ',' + lon;
-        console.log("MInutely: ", service.weather);
+        console.log("Minutely: ", service.weather);
         var config = {
           headers:{
             'passphrase': passphrase
