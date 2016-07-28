@@ -11,7 +11,9 @@ function HourlyController($scope, WeatherService){
   $scope.iconLookup = {
     'rain': 'images/rain.gif',
     'clear-night': 'images/clear-night.png',
-    'clear-day': 'images/clear-day.png'
+    'clear-day': 'images/clear-day.png',
+    'partly-cloudy-night': 'images/partly-cloudy-night.png',
+    'partly-cloudy-day': 'images/partly-cloudy-day.png'
 
   };
   $scope.$watch(function(){

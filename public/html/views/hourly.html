@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <h3>Latitude: {{ hourlyData.latitude }}, Longitude: {{hourlyData.longitude}}</h3>
+      <h3><b>Latitude:</b> {{ hourlyData.latitude }}, Longitude: {{hourlyData.longitude}}</h3>
     </div>
   </div>
 </div>
@@ -13,18 +13,18 @@
           <img src="{{ iconLookup[card.icon] }}" alt="{{ card.icon }}">
         </div>
         <div class="col-md-4">
-          <h3> Temperature: {{ card.temperature }} &deg;F</h3>
+          <h3> <b>Temperature:</b> {{ card.temperature }} &deg;F</h3>
         </div>
         <div class="col-md-4">
           <h4>{{ card.time * 1000 | date:'short' }}</h4>
         </div>
       </div>
       <div class="row">
-        <h5> Precipitation Probability: {{ card.precipProbability * 100 | number: 0 }} %</h5>
+        <h5> <b>Precipitation Probability:</b> {{ card.precipProbability * 100 | number: 0 }} %</h5>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <h5> Humidity: {{ card.humidity * 100 | number: 0 }} %</h5>
+          <h5> <b>Humidity:</b> {{ card.humidity * 100 | number: 0 }} %</h5>
         </div>
         <div class="col-md-6">
           <h3>{{ summaryLookup[card.summary] || card.summary }}</h3>
@@ -32,7 +32,7 @@
 
       </div>
       <div class="row">
-      <h5> Wind Speed:  {{ card.windSpeed }} mph </h5>
+      <h5> <b>Wind Speed:</b>  {{ card.windSpeed }} mph </h5>
       </div>
     </div>
   </div>
