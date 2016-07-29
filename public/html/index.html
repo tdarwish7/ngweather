@@ -26,12 +26,23 @@
         center: {lat: 29, lng: -82},
         zoom: 10
       });
+
+      google.maps.event.addListener(map, 'click', function(event) {
+
+      var lat = event.latLng.lat();
+      var lng = event.latLng.lng();
+      console.log(lat, lng);
+      marker = new google.maps.Marker({position: event.latLng, map: map});
+
+
+  });
+
     }
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5aVqKQgljqiPuOgfaZ0v4G-rpDtamsKE
   &callback=initMap"
   async defer></script>
- 
+
   <ng-view></ng-view>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
