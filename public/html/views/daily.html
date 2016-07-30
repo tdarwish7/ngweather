@@ -16,8 +16,15 @@
         <img src="{{ iconLookup[card.icon]}}" alt="{{ card.icon }}">
       </div>
       <br>
-      <div class="col-md-2">
-        <b>Humidity:</b> {{ card.humidity * 100 | number: 0}} %
+      <div class="row">
+        <div class="col-md-2">
+          <b>Humidity:</b> {{ card.humidity * 100 | number: 0}} %
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <b>Precipitation Probability:</b> {{ card.precipProb * 100 | number: 0}} %
+        </div>
       </div>
       <div class="col-md-4 col-md-offset-5">
         <h3>Temperatures</h3>
