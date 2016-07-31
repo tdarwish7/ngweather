@@ -2,6 +2,19 @@
 <html lang="en" ng-app='ngWeather'>
 <head>
 
+<<<<<<< HEAD
+
+=======
+<style>
+    html, body {
+      height: 80%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100%;
+    }
+  </style>
 
   <meta charset="UTF-8">
   <title>ngWeather</title>
@@ -9,6 +22,22 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+
+=======
+  <!-- <div id="map"></div>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 29, lng: -82},
+        zoom: 10
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACnJOJaoR92oT0NFWhI6efcf8viD818hU
+  &callback=initMap"
+  async defer></script> -->
 
 
   <ng-view></ng-view>
