@@ -6,8 +6,8 @@
 
   function WeatherService($http){
 
-      var passphrase = 'i like cheese and bacon and some other things too'
-      var baseUrl = 'https://quiet-bayou-88937.herokuapp.com/';
+      var passphrase = 'vegan all the way'
+      var baseUrl = 'https://thawing-fortress-55215.herokuapp.com/';
       var service = {
         getHourlyData: getHourlyData,
         getMinutelyData: getMinutelyData,
